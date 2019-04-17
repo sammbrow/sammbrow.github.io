@@ -1,10 +1,17 @@
-<!-- images included in this page: aboutphoto2.jpg, aboutphoto.jpg, lightsbackground.jpg, and potentially citybackground2.jpg-->
-
-<!-- Navigation: [favicon icon linking to index page], About (anchored to section below starting with Samantha M. Brown), UX Portfolio, Visual Design Portfolio, Experience, Resume (linked to resume document in docs folder), Contact (anchored to contact below) -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138506380-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138506380-1');
+  </script>
+
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="shortcut icon" href="images/faviconsb.png" />
@@ -17,7 +24,6 @@
 <body>
 <a class="skiptomain" href="#main">Skip to main content</a>
 <header>
-
   <a href = "index.html" class="logo"><img src= "images/faviconsb.png" alt="S B Logo"></a>
 
     <nav>
@@ -31,6 +37,8 @@
 
       </ul>
     </nav>
+
+
 </header>
 <main id = "main">
 
@@ -86,5 +94,26 @@
 </section>
 </main>
 <footer>Copyright Samantha M. Brown 2019</footer>
+
+
+    <!-- sticky nav javascript - help obtained: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
+      <script>
+      window.onscroll = function() {stickyNav()};
+      var navigation = document.querySelector("nav");
+      // console.log("nav var:" + navigation);
+      var stickIt = navigation.offsetTop;
+
+      function stickyNav() {
+        if (window.pageYOffset >= stickIt) {
+          navigation.classList.add("stickIt")
+          // console.log("if called");
+        } else {
+          navigation.classList.remove("stickIt");
+          // console.log("else called");
+        }
+        // console.log("Stickynav function called!");
+      }
+      </script>
+
 </body>
 </html>

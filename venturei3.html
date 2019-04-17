@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138506380-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138506380-1');
+  </script>
+
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="images/faviconsb.png" />
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
@@ -65,5 +76,25 @@
 </div>
 </main>
 <footer>Copyright Samantha M. Brown 2019</footer>
+
+    <!-- sticky nav javascript - help obtained: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
+      <script>
+      window.onscroll = function() {stickyNav()};
+      var navigation = document.querySelector("nav");
+      // console.log("nav var:" + navigation);
+      var stickIt = navigation.offsetTop;
+
+      function stickyNav() {
+        if (window.pageYOffset >= stickIt) {
+          navigation.classList.add("stickIt")
+          // console.log("if called");
+        } else {
+          navigation.classList.remove("stickIt");
+          // console.log("else called");
+        }
+        // console.log("Stickynav function called!");
+      }
+      </script>
+
 </body>
 </html>
