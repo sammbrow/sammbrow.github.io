@@ -1,0 +1,403 @@
+
+img{
+  height:30%;
+  width: 30%;
+}
+
+nav{
+  margin-bottom: 20px;
+}
+
+nav a{
+  text-decoration: none;
+  font-family: avenir, 'Nunito', sans-serif;
+  text-align: center;
+  color: black;
+  font-size: 1em;
+  padding: 10px 10px 10px 10px;
+  line-height: 300%;
+}
+
+nav ul{
+  display: block;
+  align-items: center;
+}
+
+nav li{
+  display: block;
+  text-align: center;
+}
+
+nav a.selected{
+  color: white;
+  background-color: #006D7F;
+}
+
+nav a:hover{
+  color: white;
+  background-color: #006D7F;
+}
+
+#about{
+  background-color: #64abbe;
+  padding: 20% 5%;
+}
+
+.profilephoto{
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  height: 50%;
+  width: 50%;
+}
+
+.portfoliosamples{
+  padding: 20% 5%;
+  border: none;
+  background-color: white;
+  text-decoration: none;
+}
+
+.portfoliosamples a{
+  background-color: #006D7F;
+  text-decoration: none;
+  font-family: avenir,'Nunito', sans-serif;
+  color: white;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  line-height: 300%;
+}
+
+.portfoliosamples li{
+  display: inline-block;
+  text-align: center;
+}
+
+.portfoliosamples a:hover{
+  color: #006D7F;
+  background-color: white;
+}
+
+#contact{
+  background-image: url("../images/citybackground.jpg");
+  padding: 20% 0%;
+  background-color: turquoise;
+  display: flex;
+  height: auto;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+}
+
+.contacttext{
+  display: block;
+  background-color: #64abbe;
+  padding: 70px 100px 100px 100px;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.gallery img{
+  width: 100%;
+  height:auto;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.gallerycontainer{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.gallery{
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+h3, h4 {
+  font-family: avenir, 'Nunito', sans-serif;
+  line-height: 1.3;
+  padding-left: 20px;
+}
+
+li{
+  font-family: avenir, 'Nunito', sans-serif;
+  padding-left: 20px;
+}
+
+p{
+  font-family: avenir, 'Nunito', sans-serif;
+  line-height: 1.3;
+  padding-bottom: 1em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1{
+  font-family: avenir, 'Nunito', sans-serif;
+  font-size: 2em;
+  color: white;
+  line-height: 1.6;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h2{
+  font-family: avenir, 'Nunito', sans-serif;
+  line-height: 1.6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  font-size: 25px
+}
+
+.indexintro{
+  background-color: turquoise;
+  background-image: url("../images/citybackground2.jpg");
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+}
+
+.indexh1{
+  align-self: center;
+  text-align: center;
+}
+
+.experienceintro{
+  background-color: turquoise;
+  background-image: url("../images/citybackground3.jpg");
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+}
+
+.experienceintro h1{
+  align-self: center;
+  text-align: center;
+}
+
+.uxintro{
+  background-color: #006D7F;
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  justify-content: center;
+}
+
+.uxintro h1{
+  align-self: center;
+  text-align: center;
+}
+
+
+.button{
+  line-height: 300%;
+  background-color: #006D7F;
+  padding: 15px 32px;
+  margin-left: 40%;
+  margin-top: 10%;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-family: avenir, 'Nunito', sans-serif;
+  font-size: 1em;
+}
+
+.button:hover{
+  color: #006D7F;
+  background-color: white;
+}
+
+.button:hover a{
+  color: #006D7F;
+}
+
+a.skiptomain{
+	padding:10px;
+	text-decoration: none;
+	position: relative;
+    top: -80px;
+    transition: top ease-in .2s;
+  font-family: avenir, 'Nunito', sans-serif;
+  color: black;
+}
+
+a.skiptomain:focus{
+	background: white;
+	top: 10px;
+	border: 1px solid black;
+}
+
+footer{
+  background-color: white;
+  padding: 10% 5%;
+  font-family: avenir, 'Nunito', sans-serif;
+}
+
+a i{
+ display: inline-block;
+ padding-left: 10%;
+ color: black;
+}
+
+.uxportimpact {
+  position: relative;
+  width: 50%;
+  display: flex;
+  display: inline-block;
+}
+
+.uximage {
+  display: block;
+  width: 100vw;
+  height: auto;
+}
+
+.uxoverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #006D7F;
+  opacity: 0.9;
+  overflow: hidden;
+  width: 100vw;
+  height: 0;
+  transition: .5s ease;
+}
+
+.uxportimpact:hover .uxoverlay {
+  height: 100%;
+}
+
+.uxtext {
+  font-family: avenir, 'Nunito', sans-serif;
+  font-size: 2em;
+  white-space: nowrap;
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.entrytitle{
+  color: #006D7F;
+  padding-top: 20%;
+  padding-bottom: 5%;
+}
+
+.logo{
+  display: block;
+  margin: 0 auto;
+  width: 15vw;
+  height: 100%;
+  padding-left: 10px;
+}
+
+.logo img{
+  display: block;
+  width: 15vw;
+}
+
+/*  Media screens start! tablet --------------------------------*/
+
+@media screen and (min-width:700px){
+	body{background: white;
+	}
+	.gallery{
+    flex: 33%;
+    max-width: 33%;
+	}
+
+  nav{
+    display: block;
+    text-align: center;
+  }
+
+  nav li{
+    display: inline;
+  }
+
+  .indexintro{
+    height: 75vh;
+  }
+
+  #about{
+    padding: 10% 10%;
+  }
+
+  .profilephoto{
+    height: 30%;
+    width: 30%;
+  }
+
+  .experiencecontent{
+    margin: 50px;
+  }
+
+  .experiencecontent ul{
+    padding-left: 75px;
+  }
+
+  .uxtext{
+    font-size: 3em;
+  }
+
+}
+
+/* Media screen for desktop _________________________________*/
+
+@media screen and (min-width:1200px){
+	body{
+    background: white;
+	}
+	.gallery{
+    flex: 33%;
+    max-width: 33%;
+	}
+
+  #about{
+    padding: 5% 20%;
+  }
+
+  .profilephoto{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    height: 30%;
+    width: 30%;
+  }
+
+  .experiencecontent{
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .experiencecontent ul{
+    padding-left: 75px;
+  }
+
+  .uxtext{
+    font-size: 4em;
+  }
+
+}
