@@ -484,6 +484,22 @@ margin-top: 20px;
   font-weight: bold;
 }
 
+input{
+  display: block;
+  font-family: avenir, 'Nunito', sans-serif;
+  margin-left: 15%
+}
+
+label{
+  display: block;
+  font-family: avenir, 'Nunito', sans-serif;
+  margin-left: 15%
+}
+
+input:focus{
+  background: yellow;
+}
+
 
 
 /* Javascript specific css */
