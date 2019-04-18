@@ -21,8 +21,9 @@
   <meta name = "viewport" content="width=device-width, initial-scale=1">
     <title >Samantha M. Brown</title>
 </head>
-<body>
+<body onload="typeEffect()">
 <a class="skiptomain" href="#main">Skip to main content</a>
+
 <header>
   <a href = "index.html" class="logo"><img src= "images/faviconsb.png" alt="S B Logo"></a>
 
@@ -42,10 +43,9 @@
 </header>
 <main id = "main">
 
-<!-- <img src="images/citybackground2.jpg" alt=" "> - in CSS -->
-
 <section class="indexintro">
-  <h1 class="indexh1">Hi, I'm Sam Brown.<br/>User Experience & Social Impact Designer</h1>
+  <h1 class="indexh1">H</h1>
+
 </section>
 
 <section id = "about">   <!-- about anchor -->
@@ -60,11 +60,19 @@
 
   <p>User-Centered Design for Social Impact is my passion.</p>
 
-  <p>In my free time, I'll be relaxing with my dog, Deja, and watching movies about supernatural things and sitcoms. I love to alternate between lattes, tea, and apple cider.</p>
-
-  <p>You'll often find me engaged in community engagement projects at the School of Social Work at U-M or at the School of Information, trying to bridge technology with Change.</p>
-
 </section>
+
+<!-- callout box here -->
+
+<div class="resumecallout">
+  <div class="calloutdiv">
+    <p>In my free time, I'll be relaxing with my dog, Deja, and watching movies about supernatural things and sitcoms. I love to alternate between lattes, tea, and apple cider.</p>
+
+    <p>You'll often find me engaged in community engagement projects at the School of Social Work at U-M or at the School of Information, trying to bridge technology with Change.</p>
+
+      <a class="button2" href="docs/resume_sbrown.pdf">See My Resume</a>
+    </div>
+</div>
 
 <section class="portfoliosamples">
   <h2>Portfolio Samples</h2> <!-- each heading below is linked to their respective sections on the UX portfolio page -->
@@ -85,19 +93,16 @@
 
   <p>sammbrow@umich.edu</p>
   <p>(231) 388-5769</p>
-<a href = "https://www.linkedin.com/in/sammbrow/"><i class="fab fa-linkedin fa-lg" aria-label="Linkedin"></i></a>
-
-<!-- Forms Start ----------------------->
-
+<a href = "https://www.linkedin.com/in/sammbrow/" aria-label="Linkedin"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
 
 </div>
 </section>
 </main>
 <footer>Copyright Samantha M. Brown 2019</footer>
 
-
-    <!-- sticky nav javascript - help obtained: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
       <script>
+
+// sticky nav javascript
       window.onscroll = function() {stickyNav()};
       var navigation = document.querySelector("nav");
       // console.log("nav var:" + navigation);
@@ -113,6 +118,21 @@
         }
         // console.log("Stickynav function called!");
       }
+
+
+// typewriter effect
+  var initialAmount = 0;
+  var TextToType = "i, I'm Sam Brown. User Experience Designer.";
+  var speed = 60;
+
+  function typeEffect() {
+    if (initialAmount < TextToType.length) {
+      document.querySelector(".indexh1").innerHTML += TextToType.charAt(initialAmount);
+      initialAmount++;
+      setTimeout(typeEffect, speed);
+      }
+    }
+
       </script>
 
 </body>
