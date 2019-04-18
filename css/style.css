@@ -500,6 +500,10 @@ input:focus{
   background: yellow;
 }
 
+.form{
+  font-family: avenir, 'Nunito', sans-serif;
+  margin-left: 15%;
+}
 
 
 /* Javascript specific css */
